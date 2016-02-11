@@ -12,6 +12,7 @@ public class Player_controller : MonoBehaviour {
 	private float currentHeight = 0f;
 	private float maxHeight = 10f;
 	private float timeElapsed = 0f;
+	public bool isSuper = false;
 	
 	Animator anim;
 	

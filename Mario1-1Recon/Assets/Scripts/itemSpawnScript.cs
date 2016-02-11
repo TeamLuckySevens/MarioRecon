@@ -7,14 +7,14 @@ public class itemSpawnScript : MonoBehaviour {
 	public Rigidbody2D item;
 	private Rigidbody2D itemC;
 	ChildScript testItem;
-    //playerMove playerMoveRef;
+    Player_controller playerMoveRef;
 	contactCheck stop;
 
 	// Use this for initialization
 	void Start () {
 		//testItem = gameObject.GetComponent<ChildScript>();
 		testItem = GameObject.FindGameObjectWithTag("block").GetComponentInChildren<ChildScript>();
-		//playerMoveRef = GameObject.FindGameObjectWithTag ("Player").GetComponent<playerMove>();
+		playerMoveRef = GameObject.FindGameObjectWithTag ("Player").GetComponent<Player_controller>();
 		stop = GameObject.FindGameObjectWithTag ("block").GetComponentInChildren<contactCheck> ();
 
 	}
