@@ -7,8 +7,16 @@ public class small : MonoBehaviour {
 	public Vector2 startPos;
 	public float Speed = 3f;
 	public float bumpHeight = .5f;
+	SpriteRenderer sr;
+	public Sprite used;
+
+
+
+
 
 	private bool bump = false;
+
+	int count = 0;
 
 
 
@@ -17,7 +25,7 @@ public class small : MonoBehaviour {
 		startPos = transform.position;
 		height = transform.position;
 		height.y += bumpHeight;
-
+		sr = GetComponent<SpriteRenderer> ();
 
 	}
 
@@ -26,7 +34,7 @@ public class small : MonoBehaviour {
 
 	void Update(){
 
-		if(bump == true){
+		if(bump == true && count < 1){
 			transform.position = Vector3.MoveTowards (transform.position, height , Speed* Time.deltaTime);
 			//bump = false;
 			Debug.Log("UP");
@@ -36,6 +44,8 @@ public class small : MonoBehaviour {
 				transform.position = Vector3.MoveTowards (transform.position, startPos, Speed * Time.deltaTime);
 				Debug.Log ("DOWN");
 				bump = false;
+				count++;
+				sr.sprite = used;
 			}
 				
 		}
@@ -48,6 +58,7 @@ public class small : MonoBehaviour {
 
 		if (col.name == "HeadCheck")
 		bump = true;
+		
 	
 	}
 }
