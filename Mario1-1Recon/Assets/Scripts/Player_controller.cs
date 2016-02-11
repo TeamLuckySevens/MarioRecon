@@ -53,6 +53,7 @@ public class Player_controller : MonoBehaviour {
 		UpdateScore ();
 		
 		
+		/*
 		if ((grounded || !doubleJump) && Input.GetKeyDown (KeyCode.Space)) {
 
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
@@ -63,7 +64,9 @@ public class Player_controller : MonoBehaviour {
 			
 			
 		}
-
+		*/
+		
+		
 		
 		
 		
