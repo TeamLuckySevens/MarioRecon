@@ -3,24 +3,15 @@ using System.Collections;
 
 public class contactCheck : MonoBehaviour {
 
-    private Transform hitCheckBox;
     ChildScript testing;
-    private Vector2 lerpPos;
-    public Vector2 startPoint;
     public float move = 0.5f;
-    public Transform farEnd;
     private Vector2 posA;
     private Vector2 posB;
-    private float secondsForOneLength = 20f;
     public int control = 0;
 	// Use this for initialization
 	void Start () {
-
-        hitCheckBox = transform.FindChild("HitBox");
-        //lerpPos = transform.FindChild("LerpPostitionFar");
-        testing = gameObject.GetComponentInChildren<ChildScript>();
-
-
+		
+		testing = gameObject.GetComponentInChildren<ChildScript> ();
         
     }
 

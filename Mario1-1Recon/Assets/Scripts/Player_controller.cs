@@ -13,6 +13,7 @@ public class Player_controller : MonoBehaviour {
 	private float maxHeight = 10f;
 	private float timeElapsed = 0f;
 	public bool isSuper = false;
+	public bool isSuperFire = false;
 	
 	Animator anim;
 	
@@ -53,7 +54,7 @@ public class Player_controller : MonoBehaviour {
 		UpdateScore ();
 		
 		
-		/*
+
 		if ((grounded || !doubleJump) && Input.GetKeyDown (KeyCode.Space)) {
 
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
@@ -64,7 +65,7 @@ public class Player_controller : MonoBehaviour {
 			
 			
 		}
-		*/
+
 		
 		
 		

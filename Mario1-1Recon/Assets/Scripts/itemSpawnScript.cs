@@ -4,17 +4,17 @@ using System.Collections;
 public class itemSpawnScript : MonoBehaviour {
 
 
-	public Rigidbody2D item;
+	public Rigidbody2D mushroom;
+	public Rigidbody2D fireFlower;
 	private Rigidbody2D itemC;
 	ChildScript testItem;
-    Player_controller playerMoveRef;
 	contactCheck stop;
+	Player_controller playerRefer;
 
 	// Use this for initialization
 	void Start () {
-		//testItem = gameObject.GetComponent<ChildScript>();
+		playerRefer = GameObject.Find ("Mario").GetComponent<Player_controller> ();
 		testItem = GameObject.FindGameObjectWithTag("block").GetComponentInChildren<ChildScript>();
-		playerMoveRef = GameObject.FindGameObjectWithTag ("Player").GetComponent<Player_controller>();
 		stop = GameObject.FindGameObjectWithTag ("block").GetComponentInChildren<contactCheck> ();
 
 	}
@@ -23,7 +23,11 @@ public class itemSpawnScript : MonoBehaviour {
 	void FixedUpdate () {
 		if(testItem.testValue && stop.control == 1)
         {
-			itemC = (Rigidbody2D)Instantiate(item, transform.position, transform.rotation);
+			if(playerRefer.isSuper == false)
+				itemC = (Rigidbody2D)Instantiate(mushroom, transform.position, transform.rotation);
+			else if(playerRefer.isSuper == true)
+				itemC = (Rigidbody2D)Instantiate(fireFlower, transform.position, transform.rotation);
+
         }
 
 	}

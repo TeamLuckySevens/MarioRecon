@@ -3,10 +3,10 @@ using System.Collections;
 
 public class movingScript : MonoBehaviour {
 
-	Player_controller playRef;
+	Player_controller playerRef;
 	// Use this for initialization
 	void Start () {
-		playRef = GameObject.FindGameObjectWithTag ("Player").GetComponent<Player_controller>();
+		playerRef = GameObject.Find ("Mario").GetComponent<Player_controller>();
 	}
 	
 	// Update is called once per frame
@@ -19,7 +19,8 @@ public class movingScript : MonoBehaviour {
 		//Debug.Log("sofarsogood");
 		if (col.gameObject.tag == "Player") 
 		{
-			playRef.isSuper = true;
+			playerRef.isSuper = true;
+			Destroy(this.gameObject);
 			Debug.Log("gotIT");
 		}
 	}
