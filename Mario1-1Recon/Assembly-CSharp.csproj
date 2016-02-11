@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\Player_controller.cs" />
      <Compile Include="Assets\Scripts\Restarter.cs" />
+     <Compile Include="Assets\Scripts\SpriteSheet.cs" />
      <Compile Include="Assets\Scripts\contactCheck.cs" />
      <Compile Include="Assets\Scripts\itemSpawnScript.cs" />
      <Compile Include="Assets\Scripts\movingScript.cs" />

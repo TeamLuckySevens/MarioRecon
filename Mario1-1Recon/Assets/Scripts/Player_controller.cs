@@ -118,12 +118,16 @@ public class Player_controller : MonoBehaviour {
 
 
 
-		if (move!=0) {
+		if (move>=.5 || move<=-.5) {
 			anim.SetBool (run, true);
 		} 
 		else {
 			anim.SetBool (run, false);
 		}
+
+
+
+
 		
 		
 	}
@@ -144,10 +148,33 @@ public class Player_controller : MonoBehaviour {
 	void UpdateScore(){
 		
 		
-		
+
+
+
 		holder = score.ToString ("D6");
 		scoreText.text = holder;
 		
+	}
+
+
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.tag == "Enemy" )
+		{
+			
+			score += 100;
+			UpdateScore();
+			//other.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, opposingForce));
+		}
+
+		if (other.tag == "Coin" )
+		{
+
+			score += 100;
+			UpdateScore();
+			other.tag = "Block"; 
+			//other.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, opposingForce));
+		}
 	}
 	
 }

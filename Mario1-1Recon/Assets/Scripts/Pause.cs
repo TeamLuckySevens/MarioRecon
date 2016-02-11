@@ -17,7 +17,7 @@ public class Pause : MonoBehaviour {
 		AudioSource sound = GetComponent<AudioSource> ();
 		sound.clip = pauseClip;
 
-		if (Input.GetKeyDown (KeyCode.Escape) || Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Return)) {
+		if ( Input.GetKeyDown(KeyCode.Return)) {
 
 			isPaused = !isPaused;
 
@@ -31,6 +31,13 @@ public class Pause : MonoBehaviour {
 				Time.timeScale = 0f; 
 				sound.Play ();
 			}
+
+
 		}
+
+
+
+		if (Input.GetKeyDown(KeyCode.Escape))
+			Application.Quit();
 	}
 }
