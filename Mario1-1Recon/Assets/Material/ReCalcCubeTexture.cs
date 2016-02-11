@@ -19,7 +19,9 @@ public class ReCalcCubeTexture : MonoBehaviour
 
 	void Start()
 	{
-		currentScale = transform.localScale;   
+		currentScale = transform.localScale; 
+		reCalcCubeTexture();
+
 	}
 
 	//This update function is only here to provide an example.
