@@ -14,6 +14,7 @@ public class small : MonoBehaviour {
 
 
 
+
 	private bool bump = false;
 
 	int count = 0;
@@ -21,6 +22,7 @@ public class small : MonoBehaviour {
 
 
 	void Start(){
+
 
 		startPos = transform.position;
 		height = transform.position;
@@ -34,10 +36,13 @@ public class small : MonoBehaviour {
 
 	void Update(){
 
+		AudioSource sound = GetComponent<AudioSource> ();
+
 		if(bump == true && count < 1){
 			transform.position = Vector3.MoveTowards (transform.position, height , Speed* Time.deltaTime);
 			//bump = false;
 			Debug.Log("UP");
+			sound.Play ();
 		}
 		if (transform.position.y == height.y) {
 			while (transform.position.y != startPos.y) {
