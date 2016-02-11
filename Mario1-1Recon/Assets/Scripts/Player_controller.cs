@@ -26,6 +26,10 @@ public class Player_controller : MonoBehaviour {
 	public Text scoreText;
 	public int score;
 	private string holder;
+
+
+
+	int run = Animator.StringToHash ("moving");
 	
 	
 	
@@ -89,6 +93,7 @@ public class Player_controller : MonoBehaviour {
 		if(grounded && currentSpeed < maxSpeed && move != 0)
 		{
 			currentSpeed += accleration;
+
 		}
 		else if(move == 0 && currentSpeed > 0)
 		{
@@ -108,6 +113,16 @@ public class Player_controller : MonoBehaviour {
 			Flip ();
 			if(grounded)
 				currentSpeed = 2f;
+		}
+
+
+
+
+		if (move!=0) {
+			anim.SetBool (run, true);
+		} 
+		else {
+			anim.SetBool (run, false);
 		}
 		
 		

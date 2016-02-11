@@ -1,11 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player_controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Material\ReCalcCubeTexture.cs">
     <Files>
-      <File FileName="Assets\Scripts\Pause.cs" Line="36" Column="2" />
-      <File FileName="Assets\Scripts\time.cs" Line="3" Column="1" />
-      <File FileName="Assets\Scripts\EnemyAI.cs" Line="8" Column="2" />
-      <File FileName="Assets\Scripts\Player_controller.cs" Line="43" Column="18" />
+      <File FileName="Assets\Scripts\itemSpawnScript.cs" Line="17" Column="5" />
+      <File FileName="Assets\Scripts\Pause.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\time.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyAI.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player_controller.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\movingScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BreakBlock.cs" Line="1" Column="1" />
+      <File FileName="Assets\Material\ReCalcCubeTexture.cs" Line="5" Column="118" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

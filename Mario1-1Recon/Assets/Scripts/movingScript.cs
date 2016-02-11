@@ -3,10 +3,10 @@ using System.Collections;
 
 public class movingScript : MonoBehaviour {
 
-	playerMove playRef;
+//	playerMove playRef;
 	// Use this for initialization
 	void Start () {
-		playRef = GameObject.FindGameObjectWithTag ("Player").GetComponent<playerMove>();
+		//playRef = GameObject.FindGameObjectWithTag ("Player").GetComponent<playerMove>();
 	}
 	
 	// Update is called once per frame
@@ -19,7 +19,7 @@ public class movingScript : MonoBehaviour {
 		//Debug.Log("sofarsogood");
 		if (col.gameObject.tag == "Player") 
 		{
-			playRef.isSuper = true;
+			//playRef.isSuper = true;
 			Debug.Log("gotIT");
 		}
 	}

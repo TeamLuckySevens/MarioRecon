@@ -13,7 +13,7 @@ public class time : MonoBehaviour {
 
 		if (timer > 0) {
 			timer -= Time.deltaTime *2.5f;
-			Debug.Log (Mathf.Round(timer));
+			//Debug.Log (Mathf.Round(timer));
 			txt.text = " " +(Mathf.Round( timer));
 		}
 	}
