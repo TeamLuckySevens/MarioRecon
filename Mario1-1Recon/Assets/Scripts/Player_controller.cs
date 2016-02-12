@@ -131,7 +131,10 @@ public class Player_controller : MonoBehaviour {
 		}
 
 
-
+		if (isSuper == true)
+			superMario ();
+		if (isSuperFire == true)
+			fireMario ();
 
 		
 		
@@ -151,14 +154,24 @@ public class Player_controller : MonoBehaviour {
 	
 	
 	void UpdateScore(){
-		
-		
+
+
+
+
+
+
+		if (score < PlayerPrefs.GetInt ("Player Score"))
+			score = PlayerPrefs.GetInt ("Player Score");
+
+
+
 
 
 
 		holder = score.ToString ("D6");
 		scoreText.text = holder;
-		
+		PlayerPrefs.SetInt ("Player Score", score);
+
 	}
 
 
@@ -166,7 +179,6 @@ public class Player_controller : MonoBehaviour {
 	{
 		if (other.tag == "Enemy" )
 		{
-			
 			score += 100;
 			UpdateScore();
 			//other.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, opposingForce));
@@ -180,6 +192,19 @@ public class Player_controller : MonoBehaviour {
 			other.tag = "Block"; 
 			//other.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, opposingForce));
 		}
+	}
+
+
+
+
+	void superMario(){
+
+	}
+
+
+	void fireMario(){
+
+
 	}
 	
 }

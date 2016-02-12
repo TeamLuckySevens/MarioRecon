@@ -9,6 +9,8 @@ public class small : MonoBehaviour {
 	public float bumpHeight = .5f;
 	SpriteRenderer sr;
 	public Sprite used;
+	public GameObject prefab;
+	int mush;
 
 
 
@@ -29,6 +31,7 @@ public class small : MonoBehaviour {
 		height.y += bumpHeight;
 		sr = GetComponent<SpriteRenderer> ();
 
+
 	}
 
 
@@ -43,6 +46,7 @@ public class small : MonoBehaviour {
 			//bump = false;
 			Debug.Log("UP");
 			sound.Play ();
+
 		}
 		if (transform.position.y == height.y) {
 			while (transform.position.y != startPos.y) {
@@ -61,9 +65,14 @@ public class small : MonoBehaviour {
 	// Update is called once per frame
 	void OnTriggerEnter2D (Collider2D col) {
 
-		if (col.name == "HeadCheck")
-		bump = true;
-		
+		if (col.name == "HeadCheck") {
+			bump = true;
+			if (mush < 1)
+				Instantiate (prefab, height, Quaternion.identity);
+				mush += 1;
+				
+		}
+
 	
 	}
 }
