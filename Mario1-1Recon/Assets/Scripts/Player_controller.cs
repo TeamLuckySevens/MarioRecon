@@ -28,6 +28,8 @@ public class Player_controller : MonoBehaviour {
 	public Text scoreText;
 	public int score;
 	private string holder;
+	public Text coinText;
+	public int coins;
 
 
 
@@ -163,6 +165,9 @@ public class Player_controller : MonoBehaviour {
 		if (score < PlayerPrefs.GetInt ("Player Score"))
 			score = PlayerPrefs.GetInt ("Player Score");
 
+		if (coins < PlayerPrefs.GetInt ("Coins"))
+			coins = PlayerPrefs.GetInt ("Coins");
+
 
 
 
@@ -170,7 +175,11 @@ public class Player_controller : MonoBehaviour {
 
 		holder = score.ToString ("D6");
 		scoreText.text = holder;
+		coinText.text = coins.ToString ("D2");
 		PlayerPrefs.SetInt ("Player Score", score);
+		PlayerPrefs.SetInt ("Coins", coins);
+
+
 
 	}
 
@@ -186,10 +195,17 @@ public class Player_controller : MonoBehaviour {
 
 		if (other.tag == "Coin" )
 		{
-
+			coins += 1;
 			score += 100;
 			UpdateScore();
 			other.tag = "Block"; 
+			//other.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, opposingForce));
+		}
+
+		if (other.tag == "Mushroom" )
+		{
+			score += 1000;
+			UpdateScore();
 			//other.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, opposingForce));
 		}
 	}

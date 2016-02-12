@@ -11,12 +11,12 @@ public class coinScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		testing2 = GameObject.FindGameObjectWithTag("cBlock").GetComponentInChildren<ChildScript2>();
-		bump = GameObject.FindGameObjectWithTag("cBlock").GetComponentInChildren<ChildScript2>();
+
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
+		bump = GameObject.FindGameObjectWithTag("cBlock").GetComponentInChildren<ChildScript2>();
 
 		if (bump == false) {
 			posA2 = new Vector2 (transform.position.x, transform.position.y + 2);
@@ -34,7 +34,7 @@ public class coinScript : MonoBehaviour {
 				} else if (controlF == 10) {
 					controlF = 0;
 					testing2.testValue3 = false;
-					bump = true;
+
 				}
 				
 				

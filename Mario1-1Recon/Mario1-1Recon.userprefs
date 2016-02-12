@@ -1,19 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\coinScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Restarter.cs">
     <Files>
-      <File FileName="Assets\Scripts\coinScript.cs" Line="28" Column="19" />
-      <File FileName="Assets\Scripts\coinSpawn.cs" Line="23" Column="4" />
-      <File FileName="Assets\Scripts\Player_controller.cs" Line="195" Column="3" />
+      <File FileName="Assets\Scripts\coinScript.cs" Line="22" Column="57" />
+      <File FileName="Assets\Scripts\coinSpawn.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player_controller.cs" Line="174" Column="3" />
       <File FileName="Assets\Scripts\movingScript.cs" Line="22" Column="4" />
       <File FileName="Assets\Scripts\contactCheck.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\itemSpawnScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FireFlowerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Material\PixelPerfectScale.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\small.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\coinBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Restarter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ChildScript2.cs" Line="19" Column="39" />
+      <File FileName="Assets\Scripts\small.cs" Line="35" Column="20" />
+      <File FileName="Assets\Scripts\Restarter.cs" Line="13" Column="29" />
+      <File FileName="Assets\Scripts\ChildScript2.cs" Line="1" Column="1" />
+      <File FileName="Assets\timeDeath.cs" Line="24" Column="3" />
+      <File FileName="Assets\Scripts\Pause.cs" Line="31" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

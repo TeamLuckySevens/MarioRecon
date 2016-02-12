@@ -11,6 +11,7 @@ public class small : MonoBehaviour {
 	public Sprite used;
 	public GameObject prefab;
 	int mush;
+	private Vector2 itemSpawn;
 
 
 
@@ -30,6 +31,8 @@ public class small : MonoBehaviour {
 		height = transform.position;
 		height.y += bumpHeight;
 		sr = GetComponent<SpriteRenderer> ();
+		itemSpawn = height;
+		itemSpawn.y += .7f;
 
 
 	}
@@ -55,6 +58,7 @@ public class small : MonoBehaviour {
 				bump = false;
 				count++;
 				sr.sprite = used;
+
 			}
 				
 		}
@@ -68,11 +72,20 @@ public class small : MonoBehaviour {
 		if (col.name == "HeadCheck") {
 			bump = true;
 			if (mush < 1)
-				Instantiate (prefab, height, Quaternion.identity);
+				Instantiate (prefab, itemSpawn, Quaternion.identity);
 				mush += 1;
+				
 				
 		}
 
+
+
+
+
 	
 	}
+
+
+
+
 }

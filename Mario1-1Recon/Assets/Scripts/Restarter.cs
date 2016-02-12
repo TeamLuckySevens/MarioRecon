@@ -10,6 +10,8 @@ public class Restarter : MonoBehaviour
 			Debug.Log ("PLAYER HIT");
 			Application.LoadLevel(Application.loadedLevel);
 		}
+		if (other.tag != "Player")
+			Destroy (other.gameObject);
 	}
 }
 
