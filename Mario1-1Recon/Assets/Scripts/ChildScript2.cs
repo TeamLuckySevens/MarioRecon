@@ -5,6 +5,7 @@ public class ChildScript2 : MonoBehaviour {
 
 	public bool testValue3 = false;
 	public bool coins = false;
+	public bool bump = false;
 	// Use this for initialization
 	void Start () {
 
@@ -21,6 +22,7 @@ public class ChildScript2 : MonoBehaviour {
 		{
 			testValue3 = true;
 			coins = true;
+			bump = true;
 		}
 		
 	}

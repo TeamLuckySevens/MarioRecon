@@ -2,16 +2,18 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\coinScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\coinScript.cs" Line="20" Column="1" />
-      <File FileName="Assets\Scripts\Player_controller.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\movingScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\contactCheck.cs" Line="53" Column="6" />
+      <File FileName="Assets\Scripts\coinScript.cs" Line="28" Column="19" />
+      <File FileName="Assets\Scripts\coinSpawn.cs" Line="23" Column="4" />
+      <File FileName="Assets\Scripts\Player_controller.cs" Line="195" Column="3" />
+      <File FileName="Assets\Scripts\movingScript.cs" Line="22" Column="4" />
+      <File FileName="Assets\Scripts\contactCheck.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\itemSpawnScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FireFlowerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\coinSpawn.cs" Line="21" Column="48" />
-      <File FileName="Assets\Material\PixelPerfectScale.cs" Line="5" Column="47" />
-      <File FileName="Assets\Scripts\small.cs" Line="57" Column="22" />
-      <File FileName="Assets\Scripts\coinBehavior.cs" Line="25" Column="5" />
+      <File FileName="Assets\Material\PixelPerfectScale.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\small.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\coinBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Restarter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ChildScript2.cs" Line="19" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
